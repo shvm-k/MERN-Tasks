@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vertical Navigation</title>
+    <style>
+        .vertical-nav {
+            width: 150px;
+            background-color: #ADD9E6;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .vertical-nav li {
+            border: none;
+            padding: 10px;
+        }
+
+        .vertical-nav li a {
+            display: block;
+            text-decoration: none;
+            color: blue;
+        }
+
+        .vertical-nav li.active {
+            background-color: #FDA500;
+        }
+    </style>
+</head>
+<body>
+    <ul class="vertical-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+</body>
+</html>
+
+<br>
+<br>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horizontal Navigation</title>
+    <style>
+        .horizontal-nav {
+            background-color: lightgray;
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            width: 300px; 
+        }
+
+        .horizontal-nav li {
+            padding: 10px;
+            border-right: 1px solid blue;
+        }
+
+        .horizontal-nav li a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .horizontal-nav li.active {
+            background-color: grey;
+        }
+
+        .horizontal-nav li:last-child {
+            border-right: none; 
+        }    
+    </style>
+</head>
+<body>
+    <ul class="horizontal-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</body>
+</html>

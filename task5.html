@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+<form action="registration_process.php" method="post">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required><br><br>
+    
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <label for="re-password">Re-enter Password:</label>
+    <input type="password" id="re-password" name="re-password" required><br><br>
+    
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+    
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" required></textarea><br><br>
+    
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required><br><br>
+    
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="usa">India</option>
+        <option value="canada">USA</option>
+    </select><br><br>
+    
+    <label for="languages">Languages Known:</label>
+    <label for="english"><input type="checkbox" id="english" name="languages[]" value="english"> English</label>
+    <label for="kannada"><input type="checkbox" id="kannada" name="languages[]" value="kannada"> Kannada</label>
+    <label for="hindi"><input type="checkbox" id="hindi" name="languages[]" value="hindi"> Hindi</label>
+    <label for="telugu"><input type="checkbox" id="telugu" name="languages[]" value="telugu"> Telugu</label>
+    <br><br>
+
+    
+    
+    <input type="checkbox" id="declaration" name="declaration" required>
+    <label for="declaration">Hereby I declare all the given details are true</label><br><br>
+
+    Log in to <a href="https://ethnus.com/" target="_blank"> Ethnus</a> website<br><br>
+    
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>

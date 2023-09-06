@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hoverable Side Nav</title>
+    <style>
+        /* Style for the side navigation container */
+        .sidenav {
+            width: 100px; 
+            height: 100%;
+            position: fixed;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            transition: width 0.2s; 
+            display: flex;
+            flex-direction: column;
+            align-items: left; 
+        }
+
+        /* Style for individual navigation buttons */
+        .sidenav a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            width: 80%; 
+            text-align: center; 
+            padding: 30px 0; 
+            box-sizing: border-box;
+            transition: 0.2s;
+            margin-top: 10px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        /* Style for button hover effect */
+        .sidenav a:hover {
+            width: 120px;
+        }    
+
+        /* Button colors */
+        .btn-green {
+            background-color: green;
+        }
+
+        .btn-blue {
+            background-color: blue;
+        }
+
+        .btn-red {
+            background-color: red;
+        }
+
+        .btn-grey {
+            background-color: grey;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav rounded-right">
+    <a href="#" class="btn-green"></a>
+    <a href="#" class="btn-blue"></a>
+    <a href="#" class="btn-red"></a>
+    <a href="#" class="btn-grey"></a>
+</div>
+
+<h1 align="center">Hoverable Sidenav Buttons</h1>
+<p align="center">Hover over the buttons in left side navigation to open them.</p>
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "180px"; 
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "50px";
+    }
+</script>
+
+
+</body>
+</html>
